@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Hacker Login Form</title>
+  <title>ELogi - Login</title>
   <link rel="stylesheet" href="{{url('CSS/style.css')}}">
 
 </head>

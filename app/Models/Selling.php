@@ -16,4 +16,9 @@ class Selling extends Model
         'Selling_Status',
         'Grand_Total',
     ];
+
+    public function detailSellings()
+    {
+        return $this->hasMany(Detail_Selling::class);
+    }
 }

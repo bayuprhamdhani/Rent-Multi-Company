@@ -18,32 +18,45 @@ class SellingController extends Controller
 
     public function create(){
         $transaction_status = Transaction_Status::All();
-        return view('selling/create', compact('status'));
+        return view('selling/create', compact('transaction_status'));
     }
 
     public function store(Request $request)
-    {  
-        // dd($request);
-        $request->validate([
-            'Customer_Id' => 'required',
-            'Cashier_Id' => 'required',
-            'Date_Sell' => 'required',
-            'Selling_Status' => 'required',
-            'Grand_Total' => 'required',
+{
+    $request->validate([
+        'Customer_ID' => 'required',
+        'Cashier_ID' => 'required',
+        'Date_Sell' => 'required',
+        'Selling_Status' => 'required',
+        'Grand_Total' => 'required',
+        'Id_Product.*' => 'required',
+        'Product_Name.*' => 'required',
+        'Selling_Price.*' => 'required|numeric',
+        'Qty.*' => 'required|numeric',
+    ]);
+
+    $selling = Selling::create([
+        'Customer_ID' => $request->Customer_ID,
+        'Cashier_ID' => $request->Cashier_ID,
+        'Date_Sell' => $request->Date_Sell,
+        'Selling_Status' => $request->Selling_Status,
+        'Grand_Total' => $request->Grand_Total,
+    ]);
+
+    foreach ($request->Id_Product as $index => $Id_Product) {
+        $detailSelling = new Detail_Selling([
+            'ID_Product' => $Id_Product,
+            'Product_Name' => $request->Product_Name[$index],
+            'Selling_Price' => $request->Selling_Price[$index],
+            'Qty' => $request->Qty[$index],
+            'Sub_Total' => $request->Selling_Price[$index] * $request->Qty[$index],
         ]);
-           
-        $data = $request->all();
-        // dd($data);
-        $check = Selling::create([
-            'Customer_Id' => $data['Customer_Id'],
-            'Cashier_Id' => $data['Cashier_Id'],
-            'Date_Sell' =>$data['Date_Sell'],
-            'Selling_Status' =>$data['Selling_Status'],
-            'Grand_Total' => ($data['Grand_Total'])
-        ]);
-         
-        return redirect()->route('selling.index')->withSuccess('Great! You have Successfully loggedin');
+
+        $selling->detailSellings()->save($detailSelling);
     }
+
+    return redirect()->route('selling.index')->withSuccess('Great! You have Successfully loggedin');
+}
 
     public function edit(Selling $selling)
     {   

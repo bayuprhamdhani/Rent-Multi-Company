@@ -9,6 +9,22 @@
 .animate-menu-push.animate-menu-push-left {
 	left: -200px;
 }
+
+.buttonn {
+    margin-right: 10px;
+    margin-top: 13px;
+    background: #03a9f3;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 7px;
+    padding: 0;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
 .animate-menu {
 	position: fixed;
 	top: 0;

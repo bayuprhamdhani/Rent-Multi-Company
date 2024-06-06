@@ -38,146 +38,79 @@
 
 <body class="bg-theme bg-theme2">
  
-<!-- Start wrapper-->
- <div id="wrapper">
- 
-  <!--Start sidebar-wrapper-->
-   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
-     <div class="brand-logo">
-       <h1 class="logo-text">MENU !!!</h1>
-     </a>
-   </div>
-   <ul class="sidebar-menu do-nicescrol">
-      <li class="sidebar-header">MAIN NAVIGATION</li>
-      <li>
-        <a href="{{ route('dashboard') }}">
-          <i class="zmdi zmdi-archive"></i> <span>Dashboard</span>
-        </a>
-      </li>
+<div id="body2" style="	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif; display: none;">
+<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
 
-      <li>
-        <a href="{{ route('users.index') }}">
-          <i class="zmdi zmdi-view-dashboard"></i> <span>Users Data</span>
-        </a>
-      </li>
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="Name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+          <input type="number" name="broj" placeholder="No Telp / WA" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
 
-      <li>
-        <a href="{{ route('product.index') }}">
-          <i class="zmdi zmdi-invert-colors"></i> <span>Products Data</span>
-        </a>
-      </li>
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="txt" placeholder="Name" required="">
+          <input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
 
-      <li>
-        <a href="index.html">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Purchase</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="{{ route('selling.index') }}">
-          <i class="zmdi zmdi-grid"></i> <span>Selling</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="{{ route('calendar') }}">
-          <i class="zmdi zmdi-account-calendar"></i> <span>Calendar</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="{{ route('test') }}">
-          <i class="zmdi zmdi-alert-circle"></i> <span>Test</span>
-        </a>
-      </li>
-
-    </ul>
-   
-   </div>
-   <!--End sidebar-wrapper-->
+</div>
 
 <!--Start topbar header-->
+<div id="body1" style="">
 <header class="topbar-nav">
  <nav class="navbar navbar-expand fixed-top">
   <ul class="navbar-nav mr-auto align-items-center">
     <li class="nav-item">
-      <a class="nav-link toggle-menu" href="javascript:void();">
-       <i class="icon-menu menu-icon"></i>
-     </a>
-    </li>
-    <li class="nav-item">
-    <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">Bayu MI22A</h5>
-    </li>
-    <li class="nav-item">
-      <form class="search-bar">
-        <input type="text" class="form-control" placeholder="Enter keywords">
-         <a href="javascript:void();"><i class="icon-magnifier"></i></a>
-      </form>
+       <h5 class="logo-text">-eLOGI</h5>
     </li>
   </ul>
-
-  <ul class="navbar-nav align-items-center right-nav-link">
-    <li class="nav-item message">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-bell-o"></i></a>
-    
-      <ul class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item media" href="#">
-            <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
-            <div class="message media-body">
-              <span class="name float-left">s</span>
-              <span class="time float-left"> Trinanda Zalsa</span>
-              <span class="time float-right">Just now</span><br>
-              <span class="name float-left">s</span>
-              <span class="chat">Fighting too...</span><br>
-            </div>
-          </a>
-          <a class="dropdown-item media" href="#">
-            <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
-            <div class="message media-body">
-              <span class="name float-left">s</span>
-              <span class="time float-left">Faiz Intel</span>
-              <span class="time float-right">5 Minute</span><br>
-              <span class="name float-left">s</span>
-              <span class="chat">Pres...ie tos aya narkoba</span><br>
-            </div>
-          </a>
-          <a class="dropdown-item media" href="#">
-            <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
-            <div class="message media-body">
-              <span class="name float-left">s</span>
-              <span class="time float-left">Atep Ramga</span>
-              <span class="time float-right">3 Minute</span><br>
-              <span class="name float-left">s</span>
-              <span class="chat">Info hajatan uy</span><br>
-            </div>
-          </a>
-          <a class="dropdown-item media" href="#">
-            <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
-            <div class="message media-body">
-              <span class="name float-left">s</span>
-              <span class="time float-left">Santyo Fighter</span>
-              <span class="time float-right">13 Minute</span><br>
-              <span class="name float-left">s</span>
-              <span class="chat">Cik order ganja 3 bengket</span><br>
-            </div>
-          </a>
-          <a class="dropdown-item media" href="#">
-            <span class="photo media-left"><img alt="avatar" src="images/avatar/5.jpg"></span>
-            <div class="message media-body">
-              <span class="name float-left">s</span>
-              <span class="time float-left">Pak Yudi</span>
-              <span class="time float-right text-xl">33 Minute</span><br>
-              <span class="name float-left">s</span>
-              <span class="chat">Ngeri bapak mah...</span><br>
-            </div>
-          </a>
-      </ul>
+  <ul class="navbar-nav mr-auto align-items-center right-nav-link">
+    <li class="nav-item">
+      <div class="card mt-4">
+        <div class="card-content">
+        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret tengah" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-home"></i></a>
+        <a>-Home-</a>
+        </div>
+      </div> 
     </li>
-
-    <li class="nav-item dropdown-lg">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-envelope-open-o"></i></a>
-      <ul class="dropdown-menu dropdown-menu-right col-md-4 offset-md-4 col-sm-8">
+    <li class="nav-item ml-1">
+      <div class="card mt-4">
+        <div class="card-content">
+        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret tengah" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-globe"></i></a>
+        <a>-Language-</a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li class="dropdown-item"> <i class="flag-icon flag-icon-gb mr-2"></i> English</li>
+          <li class="dropdown-item"> <i class="flag-icon flag-icon-fr mr-2"></i> French</li>
+          <li class="dropdown-item"> <i class="flag-icon flag-icon-cn mr-2"></i> Chinese</li>
+          <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> German</li>
+      </ul>
+        </div>
+      </div> 
+    </li>
+    <li class="nav-item ml-1">
+      <div class="card mt-4">
+        <div class="card-content">
+        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret tengah" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-building-o"></i></a>
+        <a>-Live Chat-</a>
+        <ul class="dropdown-menu dropdown-menu-right">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-content">
@@ -191,7 +124,7 @@
                                                     </div>
                                                     <div class="msg-box">
                                                         <div class="inner-box">
-                                                            <div class="name">
+                                                            <div class="name col-lg-12" style="white-space: nowrap;">
                                                                 Bayu Pratama R
                                                             </div>
                                                             <div class="meg">
@@ -234,47 +167,73 @@
                         </div><!-- /.card -->
       
       </ul>
+        </div>
+      </div> 
     </li>
-
-    <li class="nav-item language">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
-      <ul class="dropdown-menu dropdown-menu-right">
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-gb mr-2"></i> English</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-fr mr-2"></i> French</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-cn mr-2"></i> Chinese</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> German</li>
-      </ul>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-        <span class="user-profile"><img src="images/avatar/7.jpg" class="img-circle" alt=""></span>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-right">
-       <li class="dropdown-item user-details">
-        <a href="javaScript:void();">
-           <div class="media">
-             <div class="avatar"><img class="align-self-start mr-3" src="images/avatar/7.jpg" alt=""></div>
-            <div class="media-body">
-            <h6 class="mt-2 user-title">{{ auth()->user()->name }}</h6>
-            <p class="user-subtitle">{{ auth()->user()->email }}</p>
+    <li class="nav-item ml-1">
+      <div class="card mt-4">
+        <div class="card-content">
+        <a class="nav-link dropdown-toggle dropdown-toggle-nocaret tengah" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-desktop"></i></a>
+        <a>-Promo-</a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item media" href="#">
+            <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+            <div class="message media-body">
+              <span class="name float-left">s</span>
+              <span class="time float-left"> Trinanda Zalsa</span>
+              <span class="time float-right">Just now</span><br>
+              <span class="name float-left">s</span>
+              <span class="chat">Fighting too...</span><br>
             </div>
-           </div>
           </a>
-        </li>
-        <li class="dropdown-divider"></li>
-        <a href="{{ route('profile') }}">
-        <li class="dropdown-item"><i class="zmdi zmdi-face mr-2"></i> Profile</li>
-        </a>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>
-        <li class="dropdown-divider"></li>
-        <a href="{{ route('logout') }}">
-        <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
-        </a>
+          <a class="dropdown-item media" href="#">
+            <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+            <div class="message media-body">
+              <span class="name float-left">s</span>
+              <span class="time float-left">Faiz Intel</span>
+              <span class="time float-right">5 Minute</span><br>
+              <span class="name float-left">s</span>
+              <span class="chat">Pres...ie tos aya narkoba</span><br>
+            </div>
+          </a>
+          <a class="dropdown-item media" href="#">
+            <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+            <div class="message media-body">
+              <span class="name float-left">s</span>
+              <span class="time float-left">Atep Ramga</span>
+              <span class="time float-right">3 Minute</span><br>
+              <span class="name float-left">s</span>
+              <span class="chat">Info hajatan uy</span><br>
+            </div>
+          </a>
+          <a class="dropdown-item media" href="#">
+            <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+            <div class="message media-body">
+              <span class="name float-left">s</span>
+              <span class="time float-left">Santyo </span>
+              <span class="time float-right">13 Minute</span><br>
+              <span class="name float-left">s</span>
+              <span class="chat">Cik order ganja 3 bengket</span><br>
+            </div>
+          </a>
+          <a class="dropdown-item media" href="#">
+            <span class="photo media-left"><img alt="avatar" src="images/avatar/5.jpg"></span>
+            <div class="message media-body">
+              <span class="name float-left">s</span>
+              <span class="time float-left">Pak Yudi</span>
+              <span class="time float-right text-xl">33 Minute</span><br>
+              <span class="name float-left">s</span>
+              <span class="chat">Ngeri bapak mah...</span><br>
+            </div>
+          </a>
       </ul>
+        </div>
+      </div> 
+    </li>
+  </ul>
+  <ul class="navbar-nav align-items-center right-nav-link">
+    <li>
+    <a id="buttonsign" class="btn btn-sm btn-warning">Sign In and Sign Up</a>
     </li>
   </ul>
 </nav>
@@ -288,258 +247,689 @@
 
   <!--Start Dashboard Content-->
 
-	<div class="card mt-3">
+  <div class="cardd mt-3" style="background-image: url('images/avatar/love.png'); background-size: cover;">
     <div class="card-content">
         <div class="row row-group m-0">
-            <div class="col-12 col-lg-6 col-xl-3 border-light">
+            <div class="col-6 col-lg-12 col-xl-12 border-light">
                 <div class="card-body">
-                  <h5 class="text-white mb-0">9526 <span class="float-right"><i class="fa fa-shopping-cart"></i></span></h5>
-                    <div class="progress my-3" style="height:3px;">
-                       <div class="progress-bar" style="width:55%"></div>
-                    </div>
-                  <p class="mb-0 text-white small-font">Total Orders <span class="float-right">+4.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 col-xl-3 border-light">
-                <div class="card-body">
-                  <h5 class="text-white mb-0">8323 <span class="float-right"><i class="fa fa-usd"></i></span></h5>
-                    <div class="progress my-3" style="height:3px;">
-                       <div class="progress-bar" style="width:55%"></div>
-                    </div>
-                  <p class="mb-0 text-white small-font">Total Revenue <span class="float-right">+1.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 col-xl-3 border-light">
-                <div class="card-body">
-                  <h5 class="text-white mb-0">6200 <span class="float-right"><i class="fa fa-eye"></i></span></h5>
-                    <div class="progress my-3" style="height:3px;">
-                       <div class="progress-bar" style="width:55%"></div>
-                    </div>
-                  <p class="mb-0 text-white small-font">Visitors <span class="float-right">+5.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 col-xl-3 border-light">
-                <div class="card-body">
-                  <h5 class="text-white mb-0">5630 <span class="float-right"><i class="fa fa-envira"></i></span></h5>
-                    <div class="progress my-3" style="height:3px;">
-                       <div class="progress-bar" style="width:55%"></div>
-                    </div>
-                  <p class="mb-0 text-white small-font">Messages <span class="float-right">+2.2% <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                    <h1 class="logo-text" style="font-weight: bold; font-size: 40px;">Travel & Agent</h1>
+                    <h5 class="text-white mb-0">
+                    <h5 class="text-white mb-0" style="margin-top: 5px;">Around The World With -eLOGI !</h5>
+                        <select class="custom-select" id="service" name="service" aria-label="service" style="width: 150px; margin-left: 1px;">
+                          <option value="">Choose Service</option>
+                          @foreach($services as $val)
+                            <option value="{{$val->Service_Name}}">{{$val->Service_Name}}</option>
+                          @endforeach
+                        </select>
+                        <select class="custom-select" id="city" name="service" aria-label="service" style="width: 150px; margin-left: 1px; display: none;">
+                          <option value="Choose City">Choose City</option>
+                          @foreach($cities as $val)
+                            <option value="{{$val->City_Name}}">{{$val->City_Name}}</option>
+                          @endforeach
+                        </select>
+                    </h5>
+                    <h5 class="text-white mb-0">
+                    </h5>
                 </div>
             </div>
         </div>
     </div>
- </div>  
+</div>
 	  
  
-	<div class="row">
-     <div class="col-12 col-lg-8 col-xl-8">
-	    <div class="card">
-		 <div class="card-header">Site Traffic
-		   <div class="card-action">
-			 <div class="dropdown">
-			 <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-			  <i class="icon-options"></i>
-			 </a>
-				<div class="dropdown-menu dropdown-menu-right">
-				<a class="dropdown-item" href="javascript:void();">Action</a>
-				<a class="dropdown-item" href="javascript:void();">Another action</a>
-				<a class="dropdown-item" href="javascript:void();">Something else here</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="javascript:void();">Separated link</a>
-			   </div>
-			  </div>
-		   </div>
-		 </div>
-		 <div class="card-body">
-		    <ul class="list-inline">
-			  <li class="list-inline-item"><i class="fa fa-circle mr-2 text-white"></i>New Visitor</li>
-			  <li class="list-inline-item"><i class="fa fa-circle mr-2 text-light"></i>Old Visitor</li>
-			</ul>
-			<div class="chart-container-1">
-			  <canvas id="chart1"></canvas>
-			</div>
-		 </div>
-		 
-		 <div class="row m-0 row-group text-center border-top border-light-3">
-		   <div class="col-12 col-lg-4">
-		     <div class="p-3">
-		       <h5 class="mb-0">45.87M</h5>
-			   <small class="mb-0">Overall Visitor <span> <i class="fa fa-arrow-up"></i> 2.43%</span></small>
-		     </div>
-		   </div>
-		   <div class="col-12 col-lg-4">
-		     <div class="p-3">
-		       <h5 class="mb-0">15:48</h5>
-			   <small class="mb-0">Visitor Duration <span> <i class="fa fa-arrow-up"></i> 12.65%</span></small>
-		     </div>
-		   </div>
-		   <div class="col-12 col-lg-4">
-		     <div class="p-3">
-		       <h5 class="mb-0">245.65</h5>
-			   <small class="mb-0">Pages/Visit <span> <i class="fa fa-arrow-up"></i> 5.62%</span></small>
-		     </div>
-		   </div>
-		 </div>
-		 
-		</div>
-	 </div>
 
-     <div class="col-12 col-lg-4 col-xl-4">
-        <div class="card">
-           <div class="card-header">Weekly sales
-             <div class="card-action">
-             <div class="dropdown">
-             <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-              <i class="icon-options"></i>
-             </a>
-              <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="javascript:void();">Action</a>
-              <a class="dropdown-item" href="javascript:void();">Another action</a>
-              <a class="dropdown-item" href="javascript:void();">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="javascript:void();">Separated link</a>
-               </div>
-              </div>
-             </div>
-           </div>
-           <div class="card-body">
-		     <div class="chart-container-2">
-               <canvas id="chart2"></canvas>
-			  </div>
-           </div>
-           <div class="table-responsive">
-             <table class="table align-items-center">
-               <tbody>
-                 <tr>
-                   <td><i class="fa fa-circle text-white mr-2"></i> Direct</td>
-                   <td>$5856</td>
-                   <td>+55%</td>
-                 </tr>
-                 <tr>
-                   <td><i class="fa fa-circle text-light-1 mr-2"></i>Affiliate</td>
-                   <td>$2602</td>
-                   <td>+25%</td>
-                 </tr>
-                 <tr>
-                   <td><i class="fa fa-circle text-light-2 mr-2"></i>E-mail</td>
-                   <td>$1802</td>
-                   <td>+15%</td>
-                 </tr>
-                 <tr>
-                   <td><i class="fa fa-circle text-light-3 mr-2"></i>Other</td>
-                   <td>$1105</td>
-                   <td>+5%</td>
-                 </tr>
-               </tbody>
-             </table>
-           </div>
-         </div>
-     </div>
-	</div><!--End Row-->
 	
 	<div class="row">
-	 <div class="col-12 col-lg-12">
-	   <div class="card">
-	     <div class="card-header">Recent Order Tables
-		  <div class="card-action">
-             <div class="dropdown">
-             <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-              <i class="icon-options"></i>
-             </a>
-              <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="javascript:void();">Action</a>
-              <a class="dropdown-item" href="javascript:void();">Another action</a>
-              <a class="dropdown-item" href="javascript:void();">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="javascript:void();">Separated link</a>
-               </div>
-              </div>
-             </div>
-		 </div>
-	       <div class="table-responsive">
-                 <table class="table align-items-center table-flush table-borderless">
-                  <thead>
-                   <tr>
-                     <th>Product</th>
-                     <th>Photo</th>
-                     <th>Product ID</th>
-                     <th>Amount</th>
-                     <th>Date</th>
-                     <th>Shipping</th>
-                   </tr>
-                   </thead>
-                   <tbody><tr>
-                    <td>Iphone 5</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405822</td>
-                    <td>$ 1250.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 90%"></div>
-                        </div></td>
-                   </tr>
+	  <div class="col-12 col-lg-12">
+      <div class="card" id="tasikmalaya" style="display: none;">
+		    <div class="card-header">Choose Vehicle</div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">
+              <li class="nav-item">
+                <div class="rent mt-4" id="busimage" style="background-image: url('images/avatar/bus.jpg'); background-size: cover;">
+                </div>
+              </li>        
+                <li class="nav-item">
+                    <div class="rent mt-4" id="minibusimage" style="background-image: url('images/avatar/mini bus.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/pick up.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Aboat.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/sedan.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amvp.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+            </div>
+      </div>
 
-                   <tr>
-                    <td>Earphone GL</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405820</td>
-                    <td>$ 1500.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 60%"></div>
-                        </div></td>
-                   </tr>
+      <div class="card" id="bandung" style="display: none;">
+		    <div class="card-header">Choose Vehicle</div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                
+              <li class="nav-item">
+                <div class="rent mt-4" id="busimage" style="background-image: url('images/avatar/Abus.jpeg'); background-size: cover;">
+                </div>
+              </li>        
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amini bus.jpeg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Apick up.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Aboat.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Asedan.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amvp.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+            </div>
+      </div>
 
-                   <tr>
-                    <td>HD Hand Camera</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405830</td>
-                    <td>$ 1400.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 70%"></div>
-                        </div></td>
-                   </tr>
+      <div class="card" id="jakarta" style="display: none;">
+		    <div class="card-header">Choose Vehicle</div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                
+            <li class="nav-item">
+                <div class="rent mt-4" id="busimage" style="background-image: url('images/avatar/Abus.jpeg'); background-size: cover;">
+                </div>
+              </li>        
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amini bus.jpeg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Apick up.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Aboat.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Asedan.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amvp.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+            </div>
+      </div>
 
-                   <tr>
-                    <td>Clasic Shoes</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405825</td>
-                    <td>$ 1200.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 100%"></div>
-                        </div></td>
-                   </tr>
+      <div class="card" id="depok" style="display: none;">
+		    <div class="card-header">Choose Vehicle</div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                
+            <li class="nav-item">
+                <div class="rent mt-4" id="busimage" style="background-image: url('images/avatar/Abus.jpeg'); background-size: cover;">
+                </div>
+              </li>        
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amini bus.jpeg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Apick up.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Aboat.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Asedan.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amvp.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+            </div>
+      </div>
 
-                   <tr>
-                    <td>Hand Watch</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405840</td>
-                    <td>$ 1800.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 40%"></div>
-                        </div></td>
-                   </tr>
-				   
-				   <tr>
-                    <td>Clasic Shoes</td>
-                    <td><img src="https://via.placeholder.com/110x110" class="product-img" alt="product img"></td>
-                    <td>#9405825</td>
-                    <td>$ 1200.00</td>
-                    <td>03 Aug 2017</td>
-					<td><div class="progress shadow" style="height: 3px;">
-                          <div class="progress-bar" role="progressbar" style="width: 100%"></div>
-                        </div></td>
-                   </tr>
+      <div class="card" id="bekasi" style="display: none;">
+		    <div class="card-header">Choose Vehicle</div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                
+            <li class="nav-item">
+                <div class="rent mt-4" id="busimage" style="background-image: url('images/avatar/Abus.jpeg'); background-size: cover;">
+                </div>
+              </li>        
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amini bus.jpeg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Apick up.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Aboat.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Asedan.jpg'); background-size: cover;">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="rent mt-4"  style="background-image: url('images/avatar/Amvp.jpg'); background-size: cover;">
+                    </div>
+                </li>
+              </ul>
+            </div>
+      </div>
 
-                 </tbody></table>
-               </div>
-	   </div>
-	 </div>
-	</div><!--End Row-->
+      <div class="card" id="tour" style="display: none;">
+		    <div class="card-header">Tour</div>
+            <div class="card-body">
+                <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">                <li class="nav-item">
+                        <div class="tour mt-4"  style="background-image: url('images/avatar/jepang.jpg'); background-size: cover;">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="tour mt-4"  style="background-image: url('images/avatar/china.jpg'); background-size: cover;">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="tour mt-4"  style="background-image: url('images/avatar/eropa.jpg'); background-size: cover;">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="tour mt-4"  style="background-image: url('images/avatar/turki.jpg'); background-size: cover;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            </div>
+        </div>
+        
+        <div class="card" id="bustasik" style="display: none;">
+		    <div class="card-header">
+        <div class="">
+          <button class="btn btn-warning" id="backtasikmalaya" type="button" style="">BACK</button>
+         <i style="font-size: 25px; vertical-align: middle; font-style: normal;"> Bus Rent in Tasikmalaya</i>
+        </div>  
+          </div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">
+            <li class="nav-item">
+                    <div class="tour mt-4"  style="background-color: black; height: 300px; background-size: cover;">
+                    <img src="images/avatar/budiman.jpg" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    <h5 class="rentPrice">Rp1.000.000 / Day</h5>
+                    <h5 class="stock">1 Units of Bus</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-warning" id="buttonorder1" type="button" style="margin-left: 10px">ORDER</button>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="tour mt-4"  style="background-color: black; height: 300px; background-size: cover;">
+                    <img src="images/avatar/mayasari.jpg" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    <h5 class="rentPrice">Rp1.500.000 / Day</h5>
+                    <h5 class="stock">7 Units of Bus</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-warning" id="buttonorder2" type="button" style="margin-left: 10px">ORDER</button>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="tour mt-4"  style="background-color: black; height: 300px; background-size: cover;">
+                    <img src="images/avatar/primajasa.jpg" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    <h5 class="rentPrice">Rp950.000 / Day</h5>
+                    <h5 class="stock">0 Units of Bus</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-warning disabled" type="button" style="margin-left: 10px">ORDER</button>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="tour mt-4"  style="background-color: black; height: 300px; background-size: cover;">
+                    <img src="images/avatar/doa.jpg" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    <h5 class="rentPrice">Rp1.100.000 / Day</h5>
+                    <h5 class="stock">3 Units of Bus</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-warning" id="buttonorder3" type="button" style="margin-left: 10px">ORDER</button>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+                </div>
+
+                <div class="card" id="minibustasik" style="display: none;">
+		    <div class="card-header">Mini Bus Rent in Tasikmalaya</div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-center right-nav-link d-flex flex-row flex-wrap justify-content-between">
+            <li class="nav-item">
+                    <div class="tour mt-4"  style="background-color: black; height: 300px; background-size: cover;">
+                    <img src="images/avatar/budiman.jpg" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    <h5 class="rentPrice">Rp1.000.000 / Day</h5>
+                    <h5 class="stock">7 Units of Bus</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-warning disabled" type="button" style="margin-left: 10px">ORDER</button>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="tour mt-4"  style="background-color: black; height: 300px; background-size: cover;">
+                    <img src="images/avatar/mayasari.jpg" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    <h5 class="rentPrice">Rp1.500.000 / Day</h5>
+                    <h5 class="stock">9 Units of Bus</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-warning" id="buttonorder4" type="button" style="margin-left: 10px">ORDER</button>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="tour mt-4"  style="background-color: black; height: 300px; background-size: cover;">
+                    <img src="images/avatar/primajasa.jpg" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    <h5 class="rentPrice">Rp950.000 / Day</h5>
+                    <h5 class="stock">0 Units of Bus</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-warning" id="buttonorder5" type="button" style="margin-left: 10px">ORDER</button>
+                    </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="tour mt-4"  style="background-color: black; height: 300px; background-size: cover;">
+                    <img src="images/avatar/doa.jpg" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    <h5 class="rentPrice">Rp1.100.000 / Day</h5>
+                    <h5 class="stock">3 Units of Bus</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-warning" id="buttonorder6" type="button" style="margin-left: 10px">ORDER</button>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+                </div>      
+
+            <div class="card " id="formrentbusbudimantasik" style="display: none;">
+		    <div class="card-header">
+          <button class="btn btn-warning" id="backbustasik" type="button" style="">BACK</button>
+         <i style="font-size: 25px; vertical-align: middle; font-style: normal;"> Transaction</i>
+        </div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-top right-nav-link d-flex flex-row flex-wrap justify-content-between">
+              <li class="nav-item">
+              <div class="card-body">
+                                          <form action="#" method="post" novalidate="novalidate">
+                                              <div class="form-group text-center">
+                                                  <ul class="list-inline">
+                                                      <li class="list-inline-item"><i class="text-muted fa fa-cc-visa fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-mastercard fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-amex fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-discover fa-2x"></i></li>
+                                                  </ul>
+                                              </div>
+                                              <hr>
+                                              <div class="form-group">
+                                                  <label for="cc-payment" class="control-label mb-1">SUBDISTRICT</label>
+                                                  <div>
+                                                    <select class="custom-select" id="city" name="service" aria-label="service" style="width: 500px; margin-left: 1px;">
+                                                      <option value="Choose Subdistrict">Choose Subdistrict</option>
+                                                      @foreach($subdistricts as $val)
+                                                        <option value="{{$val->Subdistrict_Name}}">{{$val->Subdistrict_Name}}</option>
+                                                      @endforeach
+                                                    </select>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group has-success">
+                                                  <label for="cc-name" class="control-label mb-1">SPECIFIC PLACE</label>
+                                                  <input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name on card" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name">
+                                                  <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">DESTINATION</label>
+                                                  <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-6">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">date rent</label>
+                                                          <input type="date" id="Date_Rent" class="form-control" name="Date_Rent">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-6">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">date back</label>
+                                                          <input type="date" id="Date_Back" class="form-control" name="Date_Back">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-11">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">Input Sponsion</label>
+                                                          <input type="text" id="Date_Rent" class="form-control" name="Date_Rent" placeholder="Sponsion Type">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-1">
+                                                      <div class="form-group">
+                                                      <button onclick="input()" type="file" class="buttonn" id="file" style="margin-top: 26px;">
+                                                      <i class="fa  fa-folder"></i>
+                                                      <input type="file" id="fileinput" name="fileinput" class="form-control-file" style="display: none;" onchange="handleFileInput(this)">
+                                                      </button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">BUS TYPE</label>
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                                  <div>
+                                                  <select class="custom-select" id="specifict" name="service" aria-label="service" style="width: 500px; margin-left: 1px;">
+                                                      <option value="Choose BUS Type">Choose BUS Type</option>
+                                                      @foreach($bus_specifict->take(1) as $val)
+                                                          <option value="{{$val->specifict_name}}">{{$val->specifict_name}}</option>
+                                                      @endforeach
+                                                  </select>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">Number HP / WA</label>
+                                                  <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div>
+                                                  <button id="payment-button" type="button" class="btn btn-lg btn-info btn-block">
+                                                      <i class="fa fa-lock fa-lg"></i>
+                                                      <span id="paymentbutton">Pay Rp1.000.000</span>
+                                                  </button>
+                                              </div>
+                                              <div>
+                                              <button id="sending-button" type="button" class="btn btn-lg btn-info btn-block" style="display:none;">
+                                                      <i class="fa fa-lock fa-lg"></i>
+                                                      <span id="paymentbutton">SENDING...</span>
+                                              </button>
+                                              </div>
+                                          </form>
+                                      </div>
+              </li>
+              <li class="nav-item">
+                    <div class="tour mt-4"  style=" background-color: black; height: 670px; width: 600px; background-size: cover;" id="1AVehicle">
+                    <img src="" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    </div>
+
+                    <div class="tour mt-4"  style="display: none; background-image: url('images/avatar/bus1.jpg'); background-size: cover; height: 670px; width: 600px;" id="1bus1">
+                    <img src="" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    </div>
+                </li>
+                <li class="nav-item"  style="display: none;">
+                </li>
+            </ul>
+            </div>
+                </div>
+            
+            <div class="card " id="formrentbusmayasaritasik" style="display: none;">
+		    <div class="card-header">
+          <button class="btn btn-warning" id="backbustasik2" type="button" style="">BACK</button>
+         <i style="font-size: 25px; vertical-align: middle; font-style: normal;"> Transaction</i></div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-top right-nav-link d-flex flex-row flex-wrap justify-content-between">
+              <li class="nav-item">
+              <div class="card-body">
+                                          <form action="#" method="post" novalidate="novalidate">
+                                              <div class="form-group text-center">
+                                                  <ul class="list-inline">
+                                                      <li class="list-inline-item"><i class="text-muted fa fa-cc-visa fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-mastercard fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-amex fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-discover fa-2x"></i></li>
+                                                  </ul>
+                                              </div>
+                                              <hr>
+                                              <div class="form-group">
+                                                  <label for="cc-payment" class="control-label mb-1">SUBDISTRICT</label>
+                                                  <div>
+                                                    <select class="custom-select" id="city" name="service" aria-label="service" style="width: 500px; margin-left: 1px;">
+                                                      <option value="Choose Subdistrict">Choose Subdistrict</option>
+                                                      @foreach($subdistricts as $val)
+                                                        <option value="{{$val->Subdistrict_Name}}">{{$val->Subdistrict_Name}}</option>
+                                                      @endforeach
+                                                    </select>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group has-success">
+                                                  <label for="cc-name" class="control-label mb-1">SPECIFIC PLACE</label>
+                                                  <input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name on card" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name">
+                                                  <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">DESTINATION</label>
+                                                  <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-6">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">date rent</label>
+                                                          <input type="date" id="Date_Rent" class="form-control" name="Date_Rent">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-6">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">date back</label>
+                                                          <input type="date" id="Date_Back" class="form-control" name="Date_Back">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-11">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">Input Sponsion</label>
+                                                          <input type="text" id="Date_Rent" class="form-control" name="Date_Rent" placeholder="Sponsion Type">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-1">
+                                                      <div class="form-group">
+                                                      <button onclick="input()" type="file" class="buttonn" id="file" style="margin-top: 26px;">
+                                                      <i class="fa  fa-folder"></i>
+                                                      <input type="file" id="fileinput" name="fileinput" class="form-control-file" style="display: none;" onchange="handleFileInput(this)">
+                                                      </button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">BUS TYPE</label>
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                                  <div>
+                                                  <select class="custom-select" id="specifict2" name="service" aria-label="service" style="width: 500px; margin-left: 1px;">
+                                                      <option value="Choose BUS Type">Choose BUS Type</option>
+                                                      @foreach($bus_specifict->take(7) as $val)
+                                                          <option value="{{$val->specifict_name}}">{{$val->specifict_name}}</option>
+                                                      @endforeach
+                                                  </select>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">Number HP / WA</label>
+                                                  <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div>
+                                                  <button id="payment-button" type="button" class="btn btn-lg btn-info btn-block">
+                                                      <i class="fa fa-lock fa-lg"></i>
+                                                      <span id="paymentbutton">Pay Rp1.500.000</span>
+                                                  </button>
+                                              </div>
+                                              <div>
+                                              <button id="sending-button" type="button" class="btn btn-lg btn-info btn-block" style="display:none;">
+                                                      <i class="fa fa-lock fa-lg"></i>
+                                                      <span id="paymentbutton">SENDING...</span>
+                                              </button>
+                                              </div>
+                                          </form>
+                                      </div>
+              </li>
+              <li class="nav-item">
+                    <div class="tour mt-4"  style=" background-color: black; height: 670px; width: 600px; background-size: cover;" id="2AVehicle">
+                    <img src="" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    </div>
+
+                    <div class="tour mt-4"  style="display: none; background-image: url('images/avatar/bus1.jpg'); background-size: cover; height: 670px; width: 600px;" id="2bus1">
+                    <img src="" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    </div>
+                </li>
+                <li class="nav-item"  style="display: none;">
+                </li>
+            </ul>
+            </div>
+                </div>
+
+            <div class="card " id="formrentbusdoatasik" style="display: none;">
+		    <div class="card-header">
+          <button class="btn btn-warning" id="backbustasik3" type="button" style="">BACK</button>
+         <i style="font-size: 25px; vertical-align: middle; font-style: normal;"> Transaction</i></div>
+            <div class="card-body">
+            <ul class="navbar-nav mr-auto align-items-top right-nav-link d-flex flex-row flex-wrap justify-content-between">
+              <li class="nav-item">
+              <div class="card-body">
+                                          <form action="#" method="post" novalidate="novalidate">
+                                              <div class="form-group text-center">
+                                                  <ul class="list-inline">
+                                                      <li class="list-inline-item"><i class="text-muted fa fa-cc-visa fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-mastercard fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-amex fa-2x"></i></li>
+                                                      <li class="list-inline-item"><i class="fa fa-cc-discover fa-2x"></i></li>
+                                                  </ul>
+                                              </div>
+                                              <hr>
+                                              <div class="form-group">
+                                                  <label for="cc-payment" class="control-label mb-1">SUBDISTRICT</label>
+                                                  <div>
+                                                    <select class="custom-select" id="city" name="service" aria-label="service" style="width: 500px; margin-left: 1px;">
+                                                      <option value="Choose Subdistrict">Choose Subdistrict</option>
+                                                      @foreach($subdistricts as $val)
+                                                        <option value="{{$val->Subdistrict_Name}}">{{$val->Subdistrict_Name}}</option>
+                                                      @endforeach
+                                                    </select>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group has-success">
+                                                  <label for="cc-name" class="control-label mb-1">SPECIFIC PLACE</label>
+                                                  <input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name on card" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name">
+                                                  <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">DESTINATION</label>
+                                                  <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-6">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">date rent</label>
+                                                          <input type="date" id="Date_Rent" class="form-control" name="Date_Rent">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-6">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">date back</label>
+                                                          <input type="date" id="Date_Back" class="form-control" name="Date_Back">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-11">
+                                                      <div class="form-group">
+                                                          <label for="cc-exp" class="control-label mb-1">Input Sponsion</label>
+                                                          <input type="text" id="Date_Rent" class="form-control" name="Date_Rent" placeholder="Sponsion Type">
+                                                          <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-1">
+                                                      <div class="form-group">
+                                                      <button onclick="input()" type="file" class="buttonn" id="file" style="margin-top: 26px;">
+                                                      <i class="fa  fa-folder"></i>
+                                                      <input type="file" id="fileinput" name="fileinput" class="form-control-file" style="display: none;" onchange="handleFileInput(this)">
+                                                      </button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">BUS TYPE</label>
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                                  <div>
+                                                  <select class="custom-select" id="specifict3" name="service" aria-label="service" style="width: 500px; margin-left: 1px;">
+                                                      <option value="Choose BUS Type">Choose BUS Type</option>
+                                                      @foreach($bus_specifict->take(3) as $val)
+                                                          <option value="{{$val->specifict_name}}">{{$val->specifict_name}}</option>
+                                                      @endforeach
+                                                  </select>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="cc-number" class="control-label mb-1">Number HP / WA</label>
+                                                  <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number">
+                                                  <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                              </div>
+                                              <div>
+                                                  <button id="payment-button" type="button" class="btn btn-lg btn-info btn-block">
+                                                      <i class="fa fa-lock fa-lg"></i>
+                                                      <span id="paymentbutton">Pay Rp1.100.000</span>
+                                                  </button>
+                                              </div>
+                                              <div>
+                                              <button id="sending-button" type="button" class="btn btn-lg btn-info btn-block" style="display:none;">
+                                                      <i class="fa fa-lock fa-lg"></i>
+                                                      <span id="paymentbutton">SENDING...</span>
+                                              </button>
+                                              </div>
+                                          </form>
+                                      </div>
+              </li>
+              <li class="nav-item">
+                    <div class="tour mt-4"  style=" background-color: black; height: 670px; width: 600px; background-size: cover;" id="3AVehicle">
+                    <img src="" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    </div>
+
+                    <div class="tour mt-4"  style="display: none; background-image: url('images/avatar/bus1.jpg'); background-size: cover; height: 670px; width: 600px;" id="3bus1">
+                    <img src="" class="rounded-t-2xl" style="border-radius: 5px 5px 0 0; width: 250px;">
+                    </div>
+                </li>
+                <li class="nav-item"  style="display: none;">
+                </li>
+            </ul>
+            </div>
+                </div>
+            </div>
 
       <!--End Dashboard Content-->
 	  
@@ -556,13 +946,6 @@
     <!--End Back To Top Button-->
 	
 	<!--Start footer-->
-	<footer class="footer">
-      <div class="container">
-        <div class="text-center">
-          Copyright © 2018 Dashtreme Admin
-        </div>
-      </div>
-    </footer>
 	<!--End footer-->
   <div class="right-sidebar-container">
     <!--start color switcher-->
@@ -607,6 +990,10 @@
   </div>
   </div><!--End wrapper-->
 
+<script>
+
+</script>
+
   <!-- Bootstrap core JavaScript-->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
@@ -627,49 +1014,197 @@
   <!-- Index js -->
   <script src="assets/js/index.js"></script>
 
-  
+  <script>
+      document.getElementById('busimage').addEventListener('click', function() {
+        var bustasik = document.getElementById('bustasik');
+        var tasikmalaya = document.getElementById('tasikmalaya');
+        if (bustasik.style.display === 'none' || bustasik.style.display === '') {
+          bustasik.style.display = 'block';
+          tasikmalaya.style.display = 'none';
+        } else {
+          bustasik.style.display = 'none';
+        }
+      });
+
+      document.getElementById('minibusimage').addEventListener('click', function() {
+        var bustasik = document.getElementById('minibustasik');
+        var tasikmalaya = document.getElementById('tasikmalaya');
+        if (bustasik.style.display === 'none' || bustasik.style.display === '') {
+          bustasik.style.display = 'block';
+          tasikmalaya.style.display = 'none';
+        } else {
+          bustasik.style.display = 'none';
+        }
+      });
+
+      document.getElementById('backbustasik').addEventListener('click', function() {
+  var formrent = document.getElementById('bustasik');
+  var bustasik1 = document.getElementById('formrentbusbudimantasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik1.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+document.getElementById('backbustasik3').addEventListener('click', function() {
+  var formrent = document.getElementById('bustasik');
+  var bustasik1 = document.getElementById('formrentbusdoatasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik1.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+document.getElementById('backbustasik2').addEventListener('click', function() {
+  var formrent = document.getElementById('bustasik');
+  var bustasik1 = document.getElementById('formrentbusmayasaritasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik1.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+      document.getElementById('backtasikmalaya').addEventListener('click', function() {
+  var formrent = document.getElementById('tasikmalaya');
+  var bustasik = document.getElementById('bustasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+      document.getElementById('buttonorder1').addEventListener('click', function() {
+  var formrent = document.getElementById('formrentbusbudimantasik');
+  var bustasik = document.getElementById('bustasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+document.getElementById('buttonorder2').addEventListener('click', function() {
+  var formrent = document.getElementById('formrentbusmayasaritasik');
+  var bustasik = document.getElementById('bustasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+document.getElementById('buttonorder3').addEventListener('click', function() {
+  var formrent = document.getElementById('formrentbusdoatasik');
+  var bustasik = document.getElementById('bustasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+document.getElementById('buttonorder4').addEventListener('click', function() {
+  var formrent = document.getElementById('formrent');
+  var bustasik = document.getElementById('minibustasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+document.getElementById('buttonorder5').addEventListener('click', function() {
+  var formrent = document.getElementById('formrent');
+  var bustasik = document.getElementById('minibustasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+document.getElementById('buttonorder6').addEventListener('click', function() {
+  var formrent = document.getElementById('formrent');
+  var bustasik = document.getElementById('minibustasik');
+
+  if (formrent.style.display === 'none' || formrent.style.display === '') {
+    bustasik.style.display = 'none';
+    formrent.style.display = 'block';
+  } else {
+    formrent.style.display = 'none';
+  }
+});
+
+document.getElementById('buttonsign').addEventListener('click', function() {
+  var formrent = document.getElementById('body2');
+  var bustasik = document.getElementById('body1');
+
+  // Hide body1
+  bustasik.style.display = 'none';
+
+  // Show body2 in the same position as body1
+  formrent.style.position = 'absolute';
+  formrent.style.top = bustasik.offsetTop + '50px';
+  formrent.style.left = bustasik.offsetLeft + '450px';
+  formrent.style.display = 'block';
+});
+
+document.getElementById('payment-button').addEventListener('click', function() {
+  var paymentbutton = document.getElementById('payment-button');
+  var paymentbuttonl = document.getElementById('sending-button');
+
+  if (paymentbutton.style.display === 'none' || paymentbutton.style.display === '') {
+    paymentbuttonl.style.display = 'block';
+    paymentbutton.style.display = 'none';
+  } else {
+    paymentbuttonl.style.display = 'none';
+    paymentbutton.style.display = 'block';
+  }
+});
+
+const fileinput = document.getElementById("fileinput");
+const file = document.getElementById("file");
+const deteksi = document.getElementById("jawab7");
+const deteksif = document.getElementById("pesan7");
+
+fileinput.addEventListener("fileinput", function() {
+      // If the input field is empty, hide the button
+      if (fileinput.value.trim() === null) {
+        deteksi.style.display = "none";
+      } else {
+        // If the input field is not empty, show the button
+        deteksi.style.display = "inline-block";
+      }
+    });
+
+function input(){
+  fileinput.click()
+}
+  </script>
+    </script>
+
+</div>
 </body>
 </html>
-<!-- 
-                          <div class="dropdown for-message">
-                          <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="fa fa-envelope"></i>
-                              <span class="count bg-primary">4</span>
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="message">
-                              <p class="red">You have 4 Mails</p>
-                              <a class="dropdown-item media" href="#">
-                                  <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
-                                  <div class="message media-body">
-                                      <span class="name float-left">Jonathan Smith</span>
-                                      <span class="time float-right">Just now</span>
-                                      <p>Hello, this is an example msg</p>
-                                  </div>
-                              </a>
-                              <a class="dropdown-item media" href="#">
-                                  <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
-                                  <div class="message media-body">
-                                      <span class="name float-left">Jack Sanders</span>
-                                      <span class="time float-right">5 minutes ago</span>
-                                      <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                  </div>
-                              </a>
-                              <a class="dropdown-item media" href="#">
-                                  <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
-                                  <div class="message media-body">
-                                      <span class="name float-left">Cheryl Wheeler</span>
-                                      <span class="time float-right">10 minutes ago</span>
-                                      <p>Hello, this is an example msg</p>
-                                  </div>
-                              </a>
-                              <a class="dropdown-item media" href="#">
-                                  <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
-                                  <div class="message media-body">
-                                      <span class="name float-left">Rachel Santos</span>
-                                      <span class="time float-right">15 minutes ago</span>
-                                      <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                  </div>
-                              </a>
-                          </div>
-                        </div>
--->

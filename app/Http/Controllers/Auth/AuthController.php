@@ -9,8 +9,13 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 use App\Models\User;
+use App\Models\Service;
+use App\Models\City;
+use App\Models\Subdistrict;
+use App\Models\Bus_Specifict;
 use App\Models\Role;
 use App\Models\Status;
+use App\Http\Controllers\Excel;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Validator;
@@ -21,7 +26,11 @@ class AuthController extends Controller
     public function dashboard(User $user)
     {
         // if(Auth::check()){
-            return view('dashboard2');
+            $cities = City::All();
+            $services = Service::All();
+            $subdistricts = Subdistrict::All();
+            $bus_specifict = Bus_specifict::All();
+            return view('dashboard2', compact('services','cities','subdistricts','bus_specifict'));
         //}
   
         //return redirect("login")->withSuccess('Opps! You do not have access');
